@@ -55,7 +55,12 @@ function bookNow()
 
 function message()
 {
-    let firstBooked = Number(document.getElementById('first-booked').innerText = sitCount('first'));
-    let economyBooked = Number(document.getElementById('economy-booked').innerText = sitCount('economy'));
-    let amount = Number(document.getElementById('amount').innerText = totalAmount());
+    let firstBooked = sitCount('first');
+    Number(document.getElementById('first-sit-booked').innerText = firstBooked);
+    let firstBookedAmount = firstBooked * 150;
+    Number(document.getElementById('first-booked-amount').innerText = '$' + firstBookedAmount);
+    let economyBooked = Number(document.getElementById('economy-sit-booked').innerText = sitCount('economy'));
+    let economyBookedAmount = economyBooked * 100;
+    Number(document.getElementById('economy-booked-amount').innerText = '$' + economyBookedAmount);
+    let amount = Number(document.getElementById('amount').innerText = '$' + totalAmount());
 }

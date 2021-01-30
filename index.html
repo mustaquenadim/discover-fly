@@ -51,24 +51,24 @@
             </div>
             <!-- handleSitChange js function -->
             <div class="input-group f-class">
-                <div>
+                <div class="w-100">
                     <label for="">First Class ($150)</label>
-                    <input id="first-count" class="inp-style inp-width" type="number" name="" value="0">
-                </div>
-                <div class="plus-minus-btn">
-                    <button onclick="handleSitChange('first', false)" class="plus-minus-btn">-</button>
-                    <button onclick="handleSitChange('first', true)" class="plus-minus-btn">+</button>
+                    <div class="f-class w-100">
+                        <button onclick="handleSitChange('first', false)" class="plus-minus-btn">-</button>
+                        <input id="first-count" class="inp-style inp-width" type="number" name="" value="0">
+                        <button onclick="handleSitChange('first', true)" class="plus-minus-btn">+</button>
+                    </div>
                 </div>
             </div>
             <!-- handleSitChange js function -->
             <div class="input-group f-class">
-                <div>
+                <div class="w-100">
                     <label for="">Economy ($100)</label>
-                    <input id="economy-count" class="inp-style inp-width" type="number" name="" value="0">
-                </div>
-                <div class="plus-minus-btn">
-                    <button onclick="handleSitChange('economy', false)" class="plus-minus-btn">-</button>
-                    <button onclick="handleSitChange('economy', true)" class="plus-minus-btn">+</button>
+                    <div class="f-class w-100">
+                        <button onclick="handleSitChange('economy', false)" class="plus-minus-btn">-</button>
+                        <input id="economy-count" class="inp-style inp-width" type="number" name="" value="0">
+                        <button onclick="handleSitChange('economy', true)" class="plus-minus-btn">+</button>
+                    </div>
                 </div>
             </div>
             <!-- totalAmount js function -->
@@ -78,7 +78,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p id="sub-total">$500</p>
+                        <p id="sub-total">$00</p>
                     </div>
                 </div>
                 <div class="amount">
@@ -86,7 +86,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p id="charge">$50</p>
+                        <p id="charge">$00</p>
                     </div>
                 </div>
                 <hr>
@@ -95,7 +95,7 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p id="total">$550</p>
+                        <p id="total">$00</p>
                     </div>
                 </div>
             </div>
@@ -112,9 +112,28 @@
     <!-- start confirmation section -->
     <section id="confirmation">
         <div class="message-box">
-            <h2>Purchased Confirm</h2>
-            <p>You have booked <span id="first-booked">0</span> First Class sit/sits and <br><span id="economy-booked">0</span> Economy Class sit/sits. <br>Your have to pay $<span id="amount">0</span>.</p>
-            <button id="book-now-btn" class="btn-style">Pay Now</button>
+            <h2>Purchase Confirm</h2>
+            <table>
+                <tr>
+                    <th>Sit Type</th>
+                    <th>Num. of Ticket</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>First Class</td>
+                    <td id="first-sit-booked">0</td>
+                    <td id="first-booked-amount">$0</td>
+                </tr>
+                <tr>
+                    <td>Economy</td>
+                    <td id="economy-sit-booked">0</td>
+                    <td id="economy-booked-amount">$0</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>Grand Total</b> with VAT 10%</td>
+                    <td id="amount">$0</td>
+                </tr>
+            </table>
         </div>
     </section>
     <!-- end confirmation section -->

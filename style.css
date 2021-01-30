@@ -13,7 +13,6 @@ body {
     background-attachment: scroll;
     background-size: cover;
 }
-
 nav {
     height: 50px;
     width: 100%;
@@ -65,12 +64,19 @@ a.active {
 }
 .inp-width {
     min-width: 300px;
+    /* border: 1px solid; */
+}
+.w-100 {
+    width: 100%;
 }
 .plus-minus-btn {
+    height: 30px;
+    width: 30px;
     color: #3352f2;
     font-size: 30px;
-    padding: 5px;
-    margin-top: 10px;
+    padding: 0px 5px;
+    padding-bottom: 20px;
+    margin: 0px 5px;
     border: none;
     border-radius: 5px;
     /* border: 1px solid; */
@@ -108,7 +114,6 @@ a.active {
     font-weight: 400;
     margin-bottom: 25px;
 }
-
 .btn-style {
     display: block;
     width: 100%;
@@ -151,4 +156,13 @@ a.active {
     color: #fff;
     font-weight: 500;
     background-color: #3352f2;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
