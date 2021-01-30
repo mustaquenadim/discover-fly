@@ -1,4 +1,4 @@
-// Increment - Decrement
+// Increment - Decrement function
 function handleSitChange(sitType, isIncrease)
 {
     let sitCount = Number(document.getElementById(sitType + '-count').value);
@@ -17,7 +17,7 @@ function handleSitChange(sitType, isIncrease)
     totalAmount();
 }
 
-// Total Amount
+// Total Amount -> It shows subtotal, charge and Total amount 
 function totalAmount()
 {
     let subTotal = Number((sitCount('first') * 150) + (sitCount('economy') * 100));
@@ -44,23 +44,18 @@ function sitCount(sitType)
 }
 
 // Confirmation
-const bookNowBtn = document.getElementById('book-now-btn');
-bookNowBtn.addEventListener('click', function ()
+function bookNow()
 {
     const bookNowSec = document.getElementById('booking-area');
     bookNowSec.style.display = 'none';
     const confirmation = document.getElementById('confirmation');
     confirmation.style.display = 'block';
-})
+    message();
+}
 
-// Confirmation Message
-let firstBooked = Number(document.getElementById('first-booked').innerText = sitCount('first'));
-let economyBooked = Number(document.getElementById('economy-booked').innerText = sitCount('economy'));
-let amount = '$' + Number(document.getElementById('amount').innerText = totalAmount());
-
-// function message()
-// {
-//     let firstBooked = Number(document.getElementById('first-booked').innerText = sitCount('first'));
-//     let economyBooked = Number(document.getElementById('economy-booked').innerText = sitCount('economy'));
-//     let amount = Number(document.getElementById('amount').innerText = totalAmount());
-// }
+function message()
+{
+    let firstBooked = Number(document.getElementById('first-booked').innerText = sitCount('first'));
+    let economyBooked = Number(document.getElementById('economy-booked').innerText = sitCount('economy'));
+    let amount = Number(document.getElementById('amount').innerText = totalAmount());
+}

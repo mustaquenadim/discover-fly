@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!--Header and Menu Section-->
+    <!-- header and menu section -->
     <header class="container">
         <nav>
             <ul>
@@ -25,8 +25,9 @@
             </ul>
         </nav>
     </header>
+    <!-- end header and menu section -->
 
-    <!--Booking Section-->
+    <!-- start booking section-->
     <section id="booking-area" class="main-content container">
         <div class="booking-form">
             <h3>Booking Flights</h3>
@@ -48,6 +49,7 @@
                     <input class="inp-style" type="date" name="">
                 </div>
             </div>
+            <!-- handleSitChange js function -->
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
@@ -58,7 +60,7 @@
                     <button onclick="handleSitChange('first', true)" class="plus-minus-btn">+</button>
                 </div>
             </div>
-            
+            <!-- handleSitChange js function -->
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy ($100)</label>
@@ -69,6 +71,7 @@
                     <button onclick="handleSitChange('economy', true)" class="plus-minus-btn">+</button>
                 </div>
             </div>
+            <!-- totalAmount js function -->
             <div class="calculations">
                 <div class="amount">
                     <div class="left">
@@ -78,7 +81,6 @@
                         <p id="sub-total">$500</p>
                     </div>
                 </div>
-
                 <div class="amount">
                     <div class="left">
                         <p>Charge 10% VAT</p>
@@ -97,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <button id="book-now-btn" class="btn-style">Book Now</button>
+            <button onclick="bookNow()" class="btn-style">Book Now</button>
         </div>
 
         <div class="booking-content">
@@ -105,16 +107,21 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
         </div>
     </section>
-    <!-- javascript -->
-    <script src="script.js"></script>
-    <!-- Thank You -->
+    <!-- end booking section -->
+    
+    <!-- start confirmation section -->
     <section id="confirmation">
         <div class="message-box">
             <h2>Purchased Confirm</h2>
-            <p>You have booked <span id="first-booked">0</span> First Class sit/sits and <span id="economy-booked">0</span> Economy Class sit/sits. Your have to pay $<span id="amount">0</span>.</p>
+            <p>You have booked <span id="first-booked">0</span> First Class sit/sits and <br><span id="economy-booked">0</span> Economy Class sit/sits. <br>Your have to pay $<span id="amount">0</span>.</p>
             <button id="book-now-btn" class="btn-style">Pay Now</button>
         </div>
     </section>
+    <!-- end confirmation section -->
+
+    <!-- start javascript -->
+    <script src="script.js"></script>
+    <!-- end javascript -->
 </body>
 
 </html>
