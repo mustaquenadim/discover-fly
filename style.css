@@ -13,6 +13,7 @@ body {
     background-attachment: scroll;
     background-size: cover;
 }
+/* navbar */
 nav {
     height: 50px;
     width: 100%;
@@ -64,7 +65,6 @@ a.active {
 }
 .inp-width {
     min-width: 300px;
-    /* border: 1px solid; */
 }
 .w-100 {
     width: 100%;
@@ -79,7 +79,6 @@ a.active {
     margin: 0px 5px;
     border: none;
     border-radius: 5px;
-    /* border: 1px solid; */
 }
 .booking-form .calculations {
     margin: 10px 0;
@@ -134,7 +133,7 @@ a.active {
 .message-box {
     margin: 150px 350px;
     width: 50%;
-    height: 220px;
+    height: 350px;
     padding: 10px;
     background-color: white;
     text-align: center;
@@ -150,7 +149,7 @@ a.active {
     display: block;
     width: 50%;
     padding: 10px;
-    margin: 10px 190px;
+    margin: 30px 190px;
     border-radius: 5px;
     border: none;
     color: #fff;
