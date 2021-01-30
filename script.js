@@ -17,7 +17,7 @@ function handleSitChange(sitType, isIncrease)
     totalAmount();
 }
 
-// Total Amount -> It shows subtotal, charge and Total amount 
+// Total Amount
 function totalAmount()
 {
     let subTotal = Number((sitCount('first') * 150) + (sitCount('economy') * 100));
