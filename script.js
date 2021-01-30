@@ -46,11 +46,19 @@ function sitCount(sitType)
 // Confirmation
 function bookNow()
 {
-    const bookNowSec = document.getElementById('booking-area');
-    bookNowSec.style.display = 'none';
-    const confirmation = document.getElementById('confirmation');
-    confirmation.style.display = 'block';
-    message();
+    if (totalAmount() > 0)
+    {
+        const bookNowSec = document.getElementById('booking-area');
+        bookNowSec.style.display = 'none';
+        const confirmation = document.getElementById('confirmation');
+        confirmation.style.display = 'block';
+        message();
+    }
+    else
+    {
+        const caution = document.getElementById("caution");
+        caution.style.display = 'block';
+    }
 }
 
 function message()

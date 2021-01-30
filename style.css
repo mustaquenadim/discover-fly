@@ -45,6 +45,10 @@ a.active {
     gap: 70px;
     align-items: center;
 }
+#caution{
+    display: none;
+    color: red;
+}
 .booking-form {
     background-color: #fff;
     border: 1px solid #ddd;

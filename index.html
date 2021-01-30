@@ -30,6 +30,7 @@
     <!-- start booking section-->
     <section id="booking-area" class="main-content container">
         <div class="booking-form">
+            <p id="caution">Please fill up all information!</p>
             <h3>Booking Flights</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
@@ -55,7 +56,7 @@
                     <label for="">First Class ($150)</label>
                     <div class="f-class w-100">
                         <button onclick="handleSitChange('first', false)" class="plus-minus-btn">-</button>
-                        <input id="first-count" class="inp-style inp-width" type="number" name="" value="0">
+                        <input id="first-count" class="inp-style inp-width" type="number" name="" value="0" min="0">
                         <button onclick="handleSitChange('first', true)" class="plus-minus-btn">+</button>
                     </div>
                 </div>
@@ -66,7 +67,7 @@
                     <label for="">Economy ($100)</label>
                     <div class="f-class w-100">
                         <button onclick="handleSitChange('economy', false)" class="plus-minus-btn">-</button>
-                        <input id="economy-count" class="inp-style inp-width" type="number" name="" value="0">
+                        <input id="economy-count" class="inp-style inp-width" type="number" name="" value="0" min="0">
                         <button onclick="handleSitChange('economy', true)" class="plus-minus-btn">+</button>
                     </div>
                 </div>
@@ -78,7 +79,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p id="sub-total">$00</p>
+                        <p id="sub-total">$0</p>
                     </div>
                 </div>
                 <div class="amount">
@@ -86,7 +87,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p id="charge">$00</p>
+                        <p id="charge">$0</p>
                     </div>
                 </div>
                 <hr>
@@ -95,7 +96,7 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p id="total">$00</p>
+                        <p id="total">$0</p>
                     </div>
                 </div>
             </div>
@@ -113,7 +114,7 @@
     <section id="confirmation">
         <div class="message-box">
             <h2>Purchase Confirm</h2>
-            <p>Flight Details</p>
+            <p>Booking Information</p>
             <table>
                 <tr>
                     <th>Sit Type</th>
